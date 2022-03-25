@@ -1,0 +1,15 @@
+GET http://localhost:8080/api/prescription/get/All
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ4MDM1NDgzLCJleHAiOjE2NDgwNzE0ODMsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.PtGBfGS11O3sxnPGP4sDJJNNhD_xiMCp13a4dVq0WhY
+
+###
+POST http://localhost:8080/api/prescription/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ4MDM1NDgzLCJleHAiOjE2NDgwNzE0ODMsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.PtGBfGS11O3sxnPGP4sDJJNNhD_xiMCp13a4dVq0WhY
+
+{
+  "prescriptionName": "pneumonia"
+}
+
+
+###

@@ -1,0 +1,40 @@
+GET http://localhost:8080/api/profile/get/ALL
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMCIsImlhdCI6MTY0NzY5Njc2NywiZXhwIjoxNjQ3NzMyNzY3LCJpc3MiOiJhcHRla2FfdXoiLCJyb2xlIjoiQURNSU5fUk9MRSJ9.yKHLkuM8kHiw57ufyA6UBUa2gxNGy-oFAdRHV7FUcT4
+###
+DELETE http://localhost:8080/api/profile/delete/my-account
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlhdCI6MTY0NzkzMTE4MCwiZXhwIjoxNjQ3OTY3MTgwLCJpc3MiOiJhcHRla2FfdXoiLCJyb2xlIjoiVVNFUl9ST0xFIn0.6tqtryVESNdYJGzMJEg4cBaWkjw1zpgvYBVxbnGDUvU
+
+
+
+
+
+
+
+###
+POST http://localhost:8080/api/auth/authorization
+Content-Type: application/json
+
+{
+  "login": "mirislom0102",
+  "password": "aA123456"
+}
+
+###
+POST http://localhost:8080/api/auth/registration
+Content-Type: application/json
+## registration ##
+
+{
+  "name": "Ali",
+  "surname": "Liev",
+  "login": "ali121",
+  "password": "qwert12A",
+  "email": "umarovamahmuda190@gmail.com",
+  "phone": "+9989946900524"
+}
+###
+
+
+

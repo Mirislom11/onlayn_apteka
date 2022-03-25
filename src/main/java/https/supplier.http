@@ -1,0 +1,50 @@
+PUT http://localhost:8080/api/suppliers/update/14
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ3OTQ3OTQ3LCJleHAiOjE2NDc5ODM5NDcsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.uI6UhDExT75c6nFMtLLB0o_5xQxpv0f2XSeLs5XnQQw
+
+{
+  "companyName": "Rocheing",
+
+}
+
+###
+GET http://localhost:8080/api/suppliers/getByCompanyName/Roche
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ3OTQ3OTQ3LCJleHAiOjE2NDc5ODM5NDcsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.uI6UhDExT75c6nFMtLLB0o_5xQxpv0f2XSeLs5XnQQw
+
+###
+GET http://localhost:8080/api/suppliers/get/9
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ3OTQ3OTQ3LCJleHAiOjE2NDc5ODM5NDcsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.uI6UhDExT75c6nFMtLLB0o_5xQxpv0f2XSeLs5XnQQw
+
+###
+GET http://localhost:8080/api/suppliers/get/ALL
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ3OTQ3OTQ3LCJleHAiOjE2NDc5ODM5NDcsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.uI6UhDExT75c6nFMtLLB0o_5xQxpv0f2XSeLs5XnQQw
+
+###
+POST http://localhost:80/api/suppliers/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ3OTM1OTM3LCJleHAiOjE2NDc5NzE5MzcsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.FfSqGBdkP5JhBCg_Hbj0_Kj-XSr4vSeIiVwNPp8VEeE
+
+{
+  "companyName": "Bayer",
+  "email": "ericclasic8@gmail.com",
+  "phone": "+998971233333"
+}
+
+###
+POST http://localhost:8080/api/suppliers/create
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ3OTM1OTM3LCJleHAiOjE2NDc5NzE5MzcsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.FfSqGBdkP5JhBCg_Hbj0_Kj-XSr4vSeIiVwNPp8VEeE
+
+{
+"companyName": "Bayer",
+"email": "ericclasic8@gmail.com",
+"phone": "+998971233333"
+}
+
+
+
+
+

@@ -1,0 +1,14 @@
+GET http://localhost:8080/api/treatment/get/ALL
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ4MDI1MzgyLCJleHAiOjE2NDgwNjEzODIsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.OG-In_oBxgVDWWz3AhavZFtGU1Z_o7-twpTBzr3IqyA
+
+###
+POST http://localhost:8080/api/treatment/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ4MDI1MzgyLCJleHAiOjE2NDgwNjEzODIsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.OG-In_oBxgVDWWz3AhavZFtGU1Z_o7-twpTBzr3IqyA
+
+{
+  "disease": "adaptogens"
+}
+
+###

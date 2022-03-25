@@ -1,0 +1,46 @@
+PUT http://localhost:8080/api/address/update
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImlhdCI6MTY0NzkzNDYzMywiZXhwIjoxNjQ3OTcwNjMzLCJpc3MiOiJhcHRla2FfdXoiLCJyb2xlIjoiVVNFUl9ST0xFIn0.mIlcZa7AC-fmB98Ip24z-MKtxe_7G2EdOIesa-Pr_lw
+
+{
+"houseNumber": "A13"
+}
+
+###
+GET http://localhost:8080/api/address/get-by-country/USA
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ3OTMzNjgyLCJleHAiOjE2NDc5Njk2ODIsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.tfp4AABi3oxDPdskzanpp-SEqxWFJhLQ581WY1zp8_s
+
+###
+GET http://localhost:8080/api/address/get/ALL
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ3OTMzNjgyLCJleHAiOjE2NDc5Njk2ODIsImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.tfp4AABi3oxDPdskzanpp-SEqxWFJhLQ581WY1zp8_s
+
+
+
+###
+GET http://localhost:8080/api/address/get-myAddress
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImlhdCI6MTY0NzkzMTc3NSwiZXhwIjoxNjQ3OTY3Nzc1LCJpc3MiOiJhcHRla2FfdXoiLCJyb2xlIjoiVVNFUl9ST0xFIn0.rczyZfmmY7q2Hm4EiW7OZbbCclooImyaNjHIxkf47vA
+
+###
+POST http://localhost:8080/api/address/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImlhdCI6MTY0NzkzMTc3NSwiZXhwIjoxNjQ3OTY3Nzc1LCJpc3MiOiJhcHRla2FfdXoiLCJyb2xlIjoiVVNFUl9ST0xFIn0.rczyZfmmY7q2Hm4EiW7OZbbCclooImyaNjHIxkf47vA
+
+{
+    "city": "Nyu york",
+    "country": "USA",
+    "area": "Brooklyn",
+    "houseNumber": "A12",
+    "street": "Bleeker street"
+}
+
+###
+
+DELETE http://localhost:8080/api/address/delete
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImlhdCI6MTY0NzkzMTc3NSwiZXhwIjoxNjQ3OTY3Nzc1LCJpc3MiOiJhcHRla2FfdXoiLCJyb2xlIjoiVVNFUl9ST0xFIn0.rczyZfmmY7q2Hm4EiW7OZbbCclooImyaNjHIxkf47vA
+
+##
+

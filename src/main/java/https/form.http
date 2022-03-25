@@ -1,0 +1,13 @@
+GET http://localhost:8080/api/form/get/All
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ4MDQ1NjI5LCJleHAiOjE2NDgwODE2MjksImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.kwYYsKjViiaUeSRJNrCAlM-Q6aT1-RffSARYBkuCRfw
+###
+POST http://localhost:8080/api/form/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjQ4MDQ1NjI5LCJleHAiOjE2NDgwODE2MjksImlzcyI6ImFwdGVrYV91eiIsInJvbGUiOiJNQU5BR0VSX1JPTEUifQ.kwYYsKjViiaUeSRJNrCAlM-Q6aT1-RffSARYBkuCRfw
+
+{
+  "form": "jelly"
+}
+
+###
