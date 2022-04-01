@@ -38,4 +38,7 @@ public class MedicineEntity {
     @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinColumn(name = "form_id")
     private FormEntity form;
+    @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH}, fetch = FetchType.LAZY)
+    @JoinColumn(name = "attach_id")
+    private List<AttachEntity> attachEntityList;
 }

@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
@@ -26,4 +27,8 @@ public class AttachEntity {
     private String extension;
     @Column(name = "created_date")
     private LocalDateTime createdDate;
+    @Column(name = "url")
+    private String url;
+    @ManyToMany(mappedBy = "attachEntityList", cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    List<MedicineEntity> medicineEntityList;
 }

@@ -56,6 +56,12 @@ public class MedicineService {
         medicineDTO.setId(medicine.getId());
         return medicineDTO;
     }
+    public void addAttachToMedicine (AttachEntity attachEntity, int medicineId) {
+        MedicineEntity med = get(medicineId);
+        List<AttachEntity> attachEntities = med.getAttachEntityList();
+        attachEntities.add(attachEntity);
+        medicineRepository.save(med);
+    }
 
     public PageImpl<MedicineDTO> filterSpec (int page, int size, MedicineFilterDTO medicineFilterDTO) {
         Pageable pageable = PageRequest.of(page, size, Sort.by(Sort.Direction.DESC, "id"));
@@ -132,7 +138,13 @@ public class MedicineService {
         medicineRepository.deleteById(id);
         return new ApiResponse("Successfully deleted", true);
     }
-
+    public List<AttachEntity> getAttaches(int medicineId) {
+        MedicineEntity medicine = get(medicineId);
+        return medicine.getAttachEntityList();
+        /*return attachEntities.stream()
+                .map(attachEntity -> attachService.createAttachDTO(attachEntity))
+                .collect(Collectors.toList());*/
+    }
 
 
     private MedicineEntity getMedicineEntityByName(String medicineName) {
